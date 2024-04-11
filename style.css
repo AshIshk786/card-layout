@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --vrclr:rgb(255, 0, 170);
+}
+.container
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background:linear-gradient(20deg,#0077b6,rgba(245, 187, 228, 0.849));
+
+}
+.container .box
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+
+.box .card
+{  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    width: 350px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 15px black;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.box .card:hover
+{
+    cursor: pointer;
+    height: 400px;
+}
+.box .card .imgbx
+{
+    position: absolute;
+    height: 220px;
+    width: 300px;
+    top: 20px;
+    border-radius: 10px;
+    background-color: #0a0303;
+    transition: 0.5s    ;
+}
+.box .card:hover .imgbx{
+    top: -100px;
+    scale: 0.7;
+}
+.imgbx img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.card .content
+{
+    top: 255px;
+    position: absolute;
+    height: 22px;
+    width: 100%;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+    text-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .card:hover .content 
+{ top: 100px;
+    height: 250px;
+    font-size: 18px;
+}
+.content a
+{
+top: 25px;
+position: relative;
+padding: 15px 25px ;
+box-shadow: 0 0 8px var(--clr);
+background-color: var(--clr);
+color: aliceblue;
+font-size: 25px;
+border-radius: 2px;
+text-decoration: none;
+}
+.content h2
+{
+    color: var(--clr);
+    text-transform: capitalize;
+}
